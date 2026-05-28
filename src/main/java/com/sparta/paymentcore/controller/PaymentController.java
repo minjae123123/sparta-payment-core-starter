@@ -19,6 +19,6 @@ public class PaymentController {
     @PostMapping("/{id}/cancel")
     public ResponseEntity<?> cancel(@PathVariable Long id,
                                     @RequestBody CancelPaymentRequest request) {
-        return null;
+        return ResponseEntity.ok().build();
     }
 }
