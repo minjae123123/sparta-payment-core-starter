@@ -13,7 +13,7 @@ public class PaymentController {
 
     @PostMapping("/confirm")
     public ResponseEntity<?> confirm(@RequestBody ConfirmPaymentRequest request) {
-        return null;
+        return ResponseEntity.ok().build();
     }
 
     @PostMapping("/{id}/cancel")
